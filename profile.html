@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プロフィール — NEON MIRA 公式サイト</title>
+  <meta name="description" content="NEON MIRA — アーティストプロフィール・コンセプト・ビジュアル">
+  <meta property="og:title" content="プロフィール — NEON MIRA 公式サイト">
+  <meta property="og:description" content="NEON MIRA — アーティストプロフィール・コンセプト・ビジュアル">
+  <meta property="og:image" content="https://example.com/images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/profile.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="プロフィール — NEON MIRA 公式サイト">
+  <meta name="twitter:description" content="NEON MIRA — アーティストプロフィール・コンセプト・ビジュアル">
+  <meta name="twitter:image" content="https://example.com/images/og-image.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=M+PLUS+1:wght@400;500;700&family=Michroma&family=Noto+Sans+JP:wght@300;400;500&family=Orbitron:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-sticky-cta">
+
+  <div class="ambient-bg" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="site-logo">NEON <span>MIRA</span></a>
+    <a href="music.html" class="header-now-playing" aria-label="Angel.exe 試聴ページへ">
+      <div class="header-now-playing__wave waveform waveform--header" aria-hidden="true">
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+      </div>
+      <span class="header-now-playing__info">
+        <span class="header-now-playing__tag">NOW PLAYING</span>
+        <span class="header-now-playing__track">Angel.exe</span>
+        <span class="header-now-playing__artist">NEON MIRA</span>
+      </span>
+    </a>
+    <nav class="header-nav" aria-label="メインナビゲーション">
+      <a href="index.html">Home</a>
+      <a href="music.html">Music</a>
+      <a href="profile.html">Profile</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+      <span class="menu-toggle__bar" aria-hidden="true"></span>
+      <span class="menu-toggle__bar" aria-hidden="true"></span>
+      <span class="menu-toggle__bar" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <button type="button" class="mobile-menu__close" aria-label="メニューを閉じる">
+      <span class="mobile-menu__close-x" aria-hidden="true"></span>
+    </button>
+    <div class="mobile-menu__inner">
+      <p class="mobile-menu__tag">// NAV</p>
+      <nav class="mobile-menu__nav" aria-label="モバイルナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1 class="heading-display heading-xl">Profile</h1>
+        <p class="label">NEON MIRA</p>
+        <p class="text-ja" style="margin-top: 1rem; max-width: 36rem;">サイバーシティポップを標榜する架空のソロアーティスト。クローム、夜の都市、Y2K美学から生まれた世界観と、デジタルな冷たさを帯びたシティポップサウンド。</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="glass-card profile-card reveal">
+          <div class="profile-card__layout">
+            <div class="profile-visual profile-card__visual glow-image">
+              <img src="images/profile-detail.jpg" alt="NEON MIRA プロフィール写真" class="img-fade" width="900" height="600" loading="eager" decoding="async">
+              <p class="profile-visual__label">NEON <span>MIRA</span> / サイバーシティポップ</p>
+            </div>
+            <div class="profile-card__body">
+              <h2 class="heading-display heading-md block-title">NEON MIRA</h2>
+              <span class="label label--ja">アーティスト紹介</span>
+              <div class="divider" style="margin-left: 0;"></div>
+              <div class="prose">
+                <p>NEON MIRAは、クロームの質感、夜の都市、Y2Kサイバーカルチャーをテーマにした架空の女性ソロアーティスト。シティポップの浮遊感と、デジタルな冷たさを混ぜたサウンドで、現実と仮想の境界にある感情を描く。</p>
+                <p>2026年、CHROME SIGNAL RECORDS より1st EP「Angel.exe」でデビュー。レーベルは「近未来の音楽を記録する」ことを標榜し、ビジュアルとサウンドの両面でサイバー美学を追求する。NEON MIRAの楽曲は、壊れたデータ、届かない信号、雨上がりの都市——デジタル時代の孤独と美しさを音に変換する試みである。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Label -->
+    <section class="section" id="label">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k" style="text-align: center;">
+          <h2 class="heading-display heading-lg">LABEL</h2>
+          <span class="label label--ja">所属レーベル</span>
+        </div>
+
+        <article class="glass-card label-panel reveal">
+          <span class="hover-border" aria-hidden="true"></span>
+          <div class="label-panel__bar">
+            <span>// CHROME_SIGNAL_RECORDS</span>
+            <span>STATUS: ONLINE</span>
+          </div>
+          <div class="label-panel__body">
+            <p class="label-panel__logo">CHROME SIGNAL<em>RECORDS</em></p>
+            <div class="prose">
+              <p>サイバー美学とシティポップを軸にした近未来レーベル。音楽だけでなく、ビジュアル・ステージ・デジタル体験まで一貫した世界観を構築する。「近未来の音楽を記録する」ことを標榜し、NEON MIRAのデビューを支えた。</p>
+              <p>ジャケットアート、MV、ライブ演出——すべてにクロームの質感とネオンピンクの信号を宿らせ、リスナーをデジタルと現実の境界へ誘う。</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k" style="text-align: center;">
+          <h2 class="heading-display heading-lg">CONCEPT</h2>
+          <span class="label label--ja">コンセプト</span>
+        </div>
+
+        <div class="concept-bento reveal">
+          <article class="concept-card concept-card--chrome concept-card--wide">
+            <span class="concept-card__grain" aria-hidden="true"></span>
+            <span class="concept-card__grain concept-card__grain--fine" aria-hidden="true"></span>
+            <span class="concept-card__num" aria-hidden="true">01</span>
+            <h3 class="concept-card__en">Chrome</h3>
+            <p class="concept-card__ja">クローム</p>
+            <p class="concept-card__text">冷たく反射する金属の質感。現実と仮想の境界を映し出す、NEON MIRAの世界の基盤。ジャケット、MV、ステージすべてにこの質感が宿る。</p>
+          </article>
+
+          <article class="concept-card concept-card--city">
+            <span class="concept-card__grain" aria-hidden="true"></span>
+            <span class="concept-card__grain concept-card__grain--fine" aria-hidden="true"></span>
+            <span class="concept-card__num" aria-hidden="true">02</span>
+            <h3 class="concept-card__en">Midnight City</h3>
+            <p class="concept-card__ja">夜の都市</p>
+            <p class="concept-card__text">眠らない都市の夜景。高層ビルの灯りと濡れたアスファルトが織りなす、孤独な美しさ。楽曲の舞台はいつも、夜明け前の大都市。</p>
+          </article>
+
+          <article class="concept-card concept-card--memory">
+            <span class="concept-card__grain" aria-hidden="true"></span>
+            <span class="concept-card__grain concept-card__grain--fine" aria-hidden="true"></span>
+            <span class="concept-card__num" aria-hidden="true">03</span>
+            <h3 class="concept-card__en">Digital Memory</h3>
+            <p class="concept-card__ja">デジタル記憶</p>
+            <p class="concept-card__text">消えゆくデータの中に残る感情の断片。記憶はファイルのように保存され、時に破損する。壊れた写真、読めないメッセージ——それでも残る温かさ。</p>
+          </article>
+
+          <article class="concept-card concept-card--dream concept-card--wide">
+            <span class="concept-card__grain" aria-hidden="true"></span>
+            <span class="concept-card__grain concept-card__grain--fine" aria-hidden="true"></span>
+            <span class="concept-card__num" aria-hidden="true">04</span>
+            <h3 class="concept-card__en">Cyber Dream</h3>
+            <p class="concept-card__ja">サイバーの夢</p>
+            <p class="concept-card__text">サイバー空間に漂う夢のような感覚。現実よりも鮮やかで、触れると消えてしまいそうな世界。聴く人を、少しだけ別の次元へ誘う。</p>
+          </article>
+
+          <article class="concept-card concept-card--signal">
+            <span class="concept-card__grain" aria-hidden="true"></span>
+            <span class="concept-card__grain concept-card__grain--fine" aria-hidden="true"></span>
+            <span class="concept-card__num" aria-hidden="true">05</span>
+            <h3 class="concept-card__en">Pink Signal</h3>
+            <p class="concept-card__ja">ピンクの信号</p>
+            <p class="concept-card__text">途切れそうなネオンピンクの光。希望と儚さが交差する、NEON MIRAのシグネチャーカラー。暗闇の中で最後まで点き続ける、小さな信号。</p>
+          </article>
+
+          <article class="concept-card concept-card--rain">
+            <span class="concept-card__grain" aria-hidden="true"></span>
+            <span class="concept-card__grain concept-card__grain--fine" aria-hidden="true"></span>
+            <span class="concept-card__num" aria-hidden="true">06</span>
+            <h3 class="concept-card__en">Neon Rain</h3>
+            <p class="concept-card__ja">ネオンの雨</p>
+            <p class="concept-card__text">夜の都市に降り注ぐ、光を帯びた雨。路面に映るネオンと看板の反射が、ひとつひとつの水滴の中に別世界を閉じ込める。NEON MIRAの音に流れる、最も幻想的な情景。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="glass-card reveal" style="max-width: 900px; margin: 0 auto;">
+          <div class="visual-identity__layout">
+            <div class="profile-visual visual-identity__visual glow-image">
+              <img src="images/artist-neon-mira.jpg" alt="NEON MIRA アーティストビジュアル" width="600" height="800" loading="lazy" decoding="async">
+              <p class="profile-visual__label">ビジュアル<span>アイデンティティ</span></p>
+            </div>
+            <div class="visual-identity__text">
+              <h2 class="heading-display heading-md block-title">VISUAL</h2>
+              <span class="label label--ja">ビジュアルについて</span>
+              <div class="divider"></div>
+              <div class="prose">
+                <p>NEON MIRAのビジュアルは、黒い背景、シルバーの反射、淡いピンクの光を中心に構成される。人物を大きく見せるよりも、都市や光の中に存在する小さなシルエットとして描くことで、幻想感と距離感を演出する。</p>
+                <p>フォント、UI要素、グリッチ——Y2K時代のデジタル美学を現代的に再解釈。ジャケットアートは「壊れたCD-ROMの表紙」のような質感を目指し、ステージではネオンラインとクロームの反射面が空間を包む。</p>
+              </div>
+              <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+                <span class="meta-tag">シルバー</span>
+                <span class="meta-tag">ブラック</span>
+                <span class="meta-tag meta-tag--pink">ネオンピンク</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k" style="text-align: center;">
+          <h2 class="heading-display heading-lg">GALLERY / FANART</h2>
+          <span class="label label--ja">ギャラリー</span>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="glass-card gallery-item gallery-item--wide reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <img src="images/chrome-city-bg.jpg" alt="クロームシティの夜景ビジュアル" width="1920" height="1080" loading="lazy" decoding="async">
+            <figcaption class="gallery-item__label">// CHROME_CITY</figcaption>
+          </figure>
+          <figure class="glass-card gallery-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <img src="images/artist-neon-mira.jpg" alt="NEON MIRA アーティストビジュアル" width="600" height="800" loading="lazy" decoding="async">
+            <figcaption class="gallery-item__label">// ARTIST_VISUAL</figcaption>
+          </figure>
+          <figure class="glass-card gallery-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <img src="images/cover-angel-exe.jpg" alt="Angel.exe ジャケットアート" width="800" height="800" loading="lazy" decoding="async">
+            <figcaption class="gallery-item__label">// JACKET_ART</figcaption>
+          </figure>
+          <figure class="glass-card gallery-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <img src="images/profile-detail.jpg" alt="NEON MIRA プロフィール写真" width="900" height="600" loading="lazy" decoding="async">
+            <figcaption class="gallery-item__label">// PROFILE_SHOT</figcaption>
+          </figure>
+          <figure class="glass-card gallery-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <img src="images/music-player-bg.jpg" alt="ミュージックプレイヤー背景ビジュアル" width="1200" height="400" loading="lazy" decoding="async">
+            <figcaption class="gallery-item__label">// STAGE_VISUAL</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k" style="text-align: center;">
+          <h2 class="heading-display heading-lg">ARTIST DATA</h2>
+          <span class="label label--ja">アーティストデータ</span>
+        </div>
+
+        <div class="artist-data reveal">
+          <div class="artist-data-panel">
+            <div class="artist-data-panel__bar">
+              <span class="artist-data-panel__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="artist-data-panel__filename">ARTIST_DATA.SYS</span>
+              <span class="artist-data-panel__status">ONLINE</span>
+            </div>
+
+            <div class="artist-data-panel__body">
+              <div class="artist-data-identity">
+                <p class="artist-data-identity__id">RECORD // 001</p>
+                <p class="artist-data-identity__name">NEON MIRA</p>
+                <p class="artist-data-identity__field">// スタイル</p>
+                <p class="artist-data-identity__value">サイバーシティポップ</p>
+
+                <p class="artist-data-identity__field">// カラー</p>
+                <div class="artist-data-colors">
+                  <div class="artist-data-colors__item">
+                    <span class="artist-data-colors__swatch artist-data-colors__swatch--silver" aria-hidden="true"></span>
+                    <span>シルバー</span>
+                  </div>
+                  <div class="artist-data-colors__item">
+                    <span class="artist-data-colors__swatch artist-data-colors__swatch--black" aria-hidden="true"></span>
+                    <span>ブラック</span>
+                  </div>
+                  <div class="artist-data-colors__item">
+                    <span class="artist-data-colors__swatch artist-data-colors__swatch--pink" aria-hidden="true"></span>
+                    <span>ネオンピンク</span>
+                  </div>
+                </div>
+
+                <div class="artist-data-status">
+                  <span class="artist-data-status__led" aria-hidden="true"></span>
+                  <span>STATUS: ACTIVE</span>
+                </div>
+              </div>
+
+              <dl class="artist-data-specs">
+                <div class="artist-data-specs__item artist-data-specs__item--accent">
+                  <dt>// 名前</dt>
+                  <dd>NEON MIRA</dd>
+                </div>
+                <div class="artist-data-specs__item artist-data-specs__item--accent">
+                  <dt>// デビュー作</dt>
+                  <dd>Angel.exe</dd>
+                </div>
+                <div class="artist-data-specs__item">
+                  <dt>// ムード</dt>
+                  <dd>
+                    <span class="artist-data-tag">近未来</span>
+                    <span class="artist-data-tag">幻想的</span>
+                    <span class="artist-data-tag">儚い</span>
+                  </dd>
+                </div>
+                <div class="artist-data-specs__item artist-data-specs__item--wide">
+                  <dt>// レーベル</dt>
+                  <dd>CHROME SIGNAL RECORDS</dd>
+                </div>
+                <div class="artist-data-specs__item">
+                  <dt>// 活動拠点</dt>
+                  <dd>東京（架空）</dd>
+                </div>
+                <div class="artist-data-specs__item artist-data-specs__item--wide">
+                  <dt>// 影響</dt>
+                  <dd>
+                    <span class="artist-data-tag">シティポップ</span>
+                    <span class="artist-data-tag">Y2K</span>
+                    <span class="artist-data-tag">サイバーパンク</span>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="artist-data-panel__footer" aria-hidden="true">
+              <span>LOADED: 8 FIELDS</span>
+              <span>CHK: OK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k" style="text-align: center;">
+          <h2 class="heading-display heading-lg">SOUND</h2>
+          <span class="label label--ja">サウンドの特徴</span>
+        </div>
+
+        <div class="feature-grid">
+          <div class="glass-card feature-card reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <h4>シンセレイヤー</h4>
+            <p>80年代シティポップの温かいシンセと、冷たいデジタル音色を重ねる。アナログの余韻とデジタルの精度が共存する。</p>
+          </div>
+          <div class="glass-card feature-card reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <h4>ボーカル</h4>
+            <p>透明感のある歌声に、わずかなエフェクトを加えた処理。遠くから聞こえるような、儚いボーカルトーンが特徴。</p>
+          </div>
+          <div class="glass-card feature-card reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <h4>環境音</h4>
+            <p>雨音、都市のノイズ、UIの効果音——楽曲の背景に「世界観の音」を忍ばせ、没入感を高める。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Press -->
+    <section class="section" id="press">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k" style="text-align: center;">
+          <h2 class="heading-display heading-lg">PRESS / MEDIA</h2>
+          <span class="label label--ja">メディア掲載</span>
+        </div>
+
+        <div class="press-list">
+          <article class="glass-card press-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <p class="press-item__source">Cyber Pop Weekly</p>
+            <div>
+              <blockquote class="press-item__quote">「壊れたUIの中に残る優しさ——NEON MIRAは、デジタル時代のシティポップを再定義する新星だ。」</blockquote>
+              <time class="press-item__date" datetime="2026-03-18">2026.03.18</time>
+            </div>
+          </article>
+          <article class="glass-card press-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <p class="press-item__source">Midnight FM</p>
+            <div>
+              <blockquote class="press-item__quote">「Angel.exeは、Y2K美学と現代のエモーショナルポップが交差する、今年最も印象的なデビュー作のひとつ。」</blockquote>
+              <time class="press-item__date" datetime="2026-03-10">2026.03.10</time>
+            </div>
+          </article>
+          <article class="glass-card press-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <p class="press-item__source">Chrome Signal Blog</p>
+            <div>
+              <blockquote class="press-item__quote">「CHROME SIGNAL RECORDSが仕掛ける、近未来シティポップの旗手。ビジュアルとサウンドの一体感が際立つ。」</blockquote>
+              <time class="press-item__date" datetime="2026-01-15">2026.01.15</time>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k" style="text-align: center;">
+          <h2 class="heading-display heading-lg">TIMELINE</h2>
+          <span class="label label--ja">経歴</span>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <span class="timeline-item__year">2025</span>
+            <div>
+              <p class="timeline-item__title">デモ制作・レーベル交渉</p>
+              <p class="text-ja">「Angel.exe」「Pink Signal」のデモを制作。CHROME SIGNAL RECORDS と契約交渉を開始。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-item__year">2026.01</span>
+            <div>
+              <p class="timeline-item__title">デビュー発表</p>
+              <p class="text-ja">CHROME SIGNAL RECORDS よりデビュー決定を発表。1st EP「Angel.exe」のリリースを予告。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-item__year">2026.02</span>
+            <div>
+              <p class="timeline-item__title">リード曲先行公開</p>
+              <p class="text-ja">タイトル曲「Angel.exe」をSpotify・YouTubeで先行公開。MVティザーも公開。</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <span class="timeline-item__year">2026.03</span>
+            <div>
+              <p class="timeline-item__title">1st EP リリース</p>
+              <p class="text-ja">全5曲入りEP「Angel.exe」を各種ストリーミングサービスで配信開始。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="streaming-bar" aria-label="ストリーミングサービス">
+    <div class="container streaming-bar__inner">
+      <span class="streaming-bar__label">// STREAM</span>
+      <nav class="streaming-bar__nav">
+        <a href="#">Spotify</a>
+        <a href="#">Apple Music</a>
+        <a href="#">YouTube Music</a>
+        <a href="#">Amazon Music</a>
+      </nav>
+    </div>
+  </aside>
+
+  <a href="music.html" class="sticky-cta">
+    <span class="sticky-cta__dot" aria-hidden="true"></span>
+    Listen — Angel.exe
+  </a>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 NEON MIRA / CHROME SIGNAL RECORDS</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
