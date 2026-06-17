@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEON MIRA 公式サイト</title>
+  <meta name="description" content="NEON MIRA — サイバーシティポップ・アーティスト。1st EP「Angel.exe」配信中。">
+  <!-- OGP: デプロイ時に https://example.com/ を実際のドメインに変更 -->
+  <meta property="og:title" content="NEON MIRA 公式サイト">
+  <meta property="og:description" content="NEON MIRA — サイバーシティポップ・アーティスト。1st EP「Angel.exe」配信中。">
+  <meta property="og:image" content="https://example.com/images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="NEON MIRA 公式サイト">
+  <meta name="twitter:description" content="NEON MIRA — サイバーシティポップ・アーティスト。1st EP「Angel.exe」配信中。">
+  <meta name="twitter:image" content="https://example.com/images/og-image.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=M+PLUS+1:wght@400;500;700&family=Michroma&family=Noto+Sans+JP:wght@300;400;500&family=Orbitron:wght@400;500;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-sticky-cta has-bottom-nav">
+
+  <div class="ambient-bg" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="site-logo">NEON <span>MIRA</span></a>
+    <a href="music.html" class="header-now-playing" aria-label="Angel.exe 試聴ページへ">
+      <div class="header-now-playing__wave waveform waveform--header" aria-hidden="true">
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+        <span class="waveform__bar"></span>
+      </div>
+      <span class="header-now-playing__info">
+        <span class="header-now-playing__tag">NOW PLAYING</span>
+        <span class="header-now-playing__track">Angel.exe</span>
+        <span class="header-now-playing__artist">NEON MIRA</span>
+      </span>
+    </a>
+    <nav class="header-nav" aria-label="メインナビゲーション">
+      <a href="index.html"><span class="nav-link__en">Home</span><span class="nav-link__ja">ホーム</span></a>
+      <a href="music.html"><span class="nav-link__en">Music</span><span class="nav-link__ja">音楽</span></a>
+      <a href="merch.html"><span class="nav-link__en">Merch</span><span class="nav-link__ja">グッズ</span></a>
+      <a href="profile.html"><span class="nav-link__en">Profile</span><span class="nav-link__ja">プロフィール</span></a>
+      <a href="contact.html"><span class="nav-link__en">Contact</span><span class="nav-link__ja">お問い合わせ</span></a>
+    </nav>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="メニューを開く">
+      <span class="menu-toggle__bar" aria-hidden="true"></span>
+      <span class="menu-toggle__bar" aria-hidden="true"></span>
+      <span class="menu-toggle__bar" aria-hidden="true"></span>
+    </button>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" inert>
+    <button type="button" class="mobile-menu__close" aria-label="メニューを閉じる">
+      <span class="mobile-menu__close-x" aria-hidden="true"></span>
+    </button>
+    <div class="mobile-menu__inner">
+      <p class="mobile-menu__tag">// NAV</p>
+      <nav class="mobile-menu__nav" aria-label="モバイルナビゲーション">
+        <a href="index.html"><span class="nav-link__en">Home</span><span class="nav-link__ja">ホーム</span></a>
+        <a href="music.html"><span class="nav-link__en">Music</span><span class="nav-link__ja">音楽</span></a>
+        <a href="merch.html"><span class="nav-link__en">Merch</span><span class="nav-link__ja">グッズ</span></a>
+        <a href="profile.html"><span class="nav-link__en">Profile</span><span class="nav-link__ja">プロフィール</span></a>
+        <a href="contact.html"><span class="nav-link__en">Contact</span><span class="nav-link__ja">お問い合わせ</span></a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero hero--home">
+      <div class="hero-bg" aria-hidden="true">
+        <img src="images/chrome-city-bg.jpg" alt="" class="hero-bg__img" width="1920" height="1080" loading="eager" decoding="async">
+        <div class="visual-overlay"></div>
+        <div class="hero-bg__noise"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__grid">
+          <div class="hero__visual">
+            <span class="y2k-tag">第1弾 EP</span>
+            <div class="image-frame cover-art cover-art--hero glow-image">
+              <img src="images/cover-angel-exe.jpg" alt="NEON MIRA 1st EP「Angel.exe」ジャケット" class="cover-art__img img-fade" width="800" height="800" loading="eager" decoding="async">
+              <span class="image-frame__noise" aria-hidden="true"></span>
+              <span class="cover-art__chrome-ring" aria-hidden="true"></span>
+              <div class="cover-art__frame-deco" aria-hidden="true">
+                <div class="cd-jacket__neon-line cd-jacket__neon-line--1"></div>
+                <div class="cd-jacket__neon-line cd-jacket__neon-line--2"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__text">
+            <div class="hero__headline">
+              <p class="label hero-label">NEON MIRA 公式サイト</p>
+              <h1 class="hero-title">Angel.exe</h1>
+            </div>
+            <p class="hero-sub">1st EP / 配信中</p>
+
+            <div class="waveform" aria-hidden="true">
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+            </div>
+
+            <p class="hero-copy">クロームの夢の中で鳴る、近未来シティポップ。</p>
+            <p class="text-ja">夜の都市とデジタルの余韻が交差する、NEON MIRAの世界観。2026年、1st EP「Angel.exe」でデビュー。シルバーに反射するビートと、淡いピンクの余韻が、現実と仮想のあいだに漂う感情を描く。</p>
+
+            <div class="release-meta" style="margin: 1.25rem 0;">
+              <span class="meta-tag">CHROME SIGNAL RECORDS</span>
+              <span class="meta-tag">全5曲</span>
+              <span class="meta-tag">約20分</span>
+            </div>
+
+            <div class="btn-group">
+              <a href="music.html" class="btn btn-primary">試聴する</a>
+              <a href="music.html" class="btn">楽曲一覧</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Release -->
+    <section class="section" id="release">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k">
+          <h2 class="heading-display heading-lg">NEW RELEASE</h2>
+          <span class="label label--ja">最新リリース</span>
+        </div>
+
+        <article class="glass-card media-card glow-image reveal">
+          <span class="hover-border" aria-hidden="true"></span>
+            <div class="image-frame cover-art cover-art--sm">
+              <img src="images/cover-angel-exe.jpg" alt="NEON MIRA 1st EP「Angel.exe」ジャケット" class="cover-art__img" width="800" height="800" loading="lazy" decoding="async">
+              <span class="image-frame__noise" aria-hidden="true"></span>
+            </div>
+            <div class="media-card__body release-info">
+              <span class="label">タイトル</span>
+              <h3>Angel.exe</h3>
+              <div class="release-meta">
+                <span class="meta-tag">NEON MIRA</span>
+                <span class="meta-tag">1st EP</span>
+                <span class="meta-tag meta-tag--pink">配信中</span>
+                <span class="meta-tag">全5曲</span>
+              </div>
+              <p>NEON MIRAの1st EP「Angel.exe」は、夜の都市、記憶、デジタルな孤独をテーマにしたサイバーシティポップ作品。シルバーに反射するビートと、淡いピンクの余韻が重なる近未来的なサウンドを描く。</p>
+              <p class="text-ja" style="margin-top: 0.75rem; font-size: 0.88rem; color: var(--text-muted);">レーベル CHROME SIGNAL RECORDS より配信。シンセ、ボーカル、都市の環境音をレイヤーした5曲構成。タイトル曲「Angel.exe」は、壊れかけたデータの中で見つけた「優しさ」を象徴するリードトラック。</p>
+              <div class="release-meta" style="margin-top: 1rem;">
+                <span class="meta-tag">2026年リリース</span>
+                <span class="meta-tag">約20分30秒</span>
+              </div>
+              <a href="music.html" class="btn btn-primary">試聴する</a>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <!-- Track Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k">
+          <h2 class="heading-display heading-lg">TRACK PREVIEW</h2>
+          <span class="label label--ja">収録曲</span>
+          <p class="text-ja" style="margin-top: 0.5rem;">曲をタップしてミニプレイヤーで試聴（デモ）</p>
+        </div>
+
+        <div class="track-grid track-grid--home">
+          <div class="glass-card track-card track-card--clickable reveal" data-track="Angel.exe">
+            <span class="hover-border" aria-hidden="true"></span>
+            <span class="track-number">01</span>
+            <div>
+              <p class="track-name">Angel.exe</p>
+              <p class="track-desc">クロームの夜に落ちる、天使のようなリードトラック。壊れたUIの中に残る、最後の優しさを歌う。</p>
+              <p class="track-meta"><span class="track-duration">4:12</span><span class="track-playing-label" hidden>再生中</span><span>リード曲</span></p>
+            </div>
+          </div>
+          <div class="glass-card track-card track-card--clickable reveal" data-track="Pink Signal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <span class="track-number">02</span>
+            <div>
+              <p class="track-name">Pink Signal</p>
+              <p class="track-desc">ネオンピンクの光が途切れそうに揺れる、甘く冷たい1曲。届かないメッセージの残像を残す。</p>
+              <p class="track-meta"><span class="track-duration">3:48</span><span class="track-playing-label" hidden>再生中</span></p>
+            </div>
+          </div>
+          <div class="glass-card track-card track-card--clickable reveal" data-track="Midnight Chrome">
+            <span class="hover-border" aria-hidden="true"></span>
+            <span class="track-number">03</span>
+            <div>
+              <p class="track-name">Midnight Chrome</p>
+              <p class="track-desc">深夜の高層ビルと反射する道路をイメージした都会的なトラック。雨上がりのアスファルトに映る光。</p>
+              <p class="track-meta"><span class="track-duration">4:05</span><span class="track-playing-label" hidden>再生中</span></p>
+            </div>
+          </div>
+          <div class="glass-card track-card track-card--clickable reveal" data-track="Plastic Heaven">
+            <span class="hover-border" aria-hidden="true"></span>
+            <span class="track-number">04</span>
+            <div>
+              <p class="track-name">Plastic Heaven</p>
+              <p class="track-desc">作られた楽園の中で本物の感情を探すY2Kポップ。プラスチックの空と、本物の涙のあいだ。</p>
+              <p class="track-meta"><span class="track-duration">3:55</span><span class="track-playing-label" hidden>再生中</span></p>
+            </div>
+          </div>
+          <div class="glass-card track-card track-card--clickable reveal" data-track="Blue Mirage">
+            <span class="hover-border" aria-hidden="true"></span>
+            <span class="track-number">05</span>
+            <div>
+              <p class="track-name">Blue Mirage</p>
+              <p class="track-desc">夜明け前の青い幻のように、静かに終わるエンディング曲。消えゆく夜明けの信号を残して。</p>
+              <p class="track-meta"><span class="track-duration">4:30</span><span class="track-playing-label" hidden>再生中</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="music-player music-player--global" id="global-player">
+          <div class="player-top">
+            <button class="player-btn" aria-label="再生 / 一時停止">
+              <span class="player-btn__icon"></span>
+            </button>
+            <div class="player-thumb">
+              <img src="images/cover-angel-exe.jpg" alt="NEON MIRA 1st EP「Angel.exe」ジャケット" width="96" height="96" loading="lazy" decoding="async">
+            </div>
+            <div class="player-track-info">
+              <p class="player-track-name">Angel.exe</p>
+              <p class="player-status">停止中</p>
+            </div>
+            <div class="player-waveform" aria-hidden="true">
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+              <span class="waveform__bar"></span>
+            </div>
+          </div>
+          <div class="player-progress">
+            <div class="player-progress__bar"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live -->
+    <section class="section" id="live">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k">
+          <h2 class="heading-display heading-lg">LIVE / EVENT</h2>
+          <span class="label label--ja">ライブ・イベント</span>
+        </div>
+
+        <div class="live-list">
+          <article class="glass-card live-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <time class="live-item__date" datetime="2026-06-21">2026.06.21</time>
+            <div>
+              <h3 class="live-item__title">NEON MIRA 1st EP Release Live</h3>
+              <p class="live-item__venue">SHIBUYA CHROME HALL / 東京</p>
+            </div>
+            <span class="live-item__status">TICKETS ON SALE</span>
+          </article>
+          <article class="glass-card live-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <time class="live-item__date" datetime="2026-07-12">2026.07.12</time>
+            <div>
+              <h3 class="live-item__title">Midnight Chrome Session</h3>
+              <p class="live-item__venue">OSAKA SIGNAL STAGE / 大阪</p>
+            </div>
+            <span class="live-item__status live-item__status--announced">ANNOUNCED</span>
+          </article>
+          <article class="glass-card live-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <time class="live-item__date" datetime="2026-08-30">2026.08.30</time>
+            <div>
+              <h3 class="live-item__title">CHROME SIGNAL FESTIVAL 2026</h3>
+              <p class="live-item__venue">YOKOHAMA BAY ARENA / 神奈川</p>
+            </div>
+            <span class="live-item__status live-item__status--announced">ANNOUNCED</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k">
+          <h2 class="heading-display heading-lg">NEWS</h2>
+          <span class="label label--ja">ニュース</span>
+        </div>
+
+        <div class="news-list">
+          <article class="glass-card news-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <time class="news-item__date" datetime="2026-03-15">2026.03.15</time>
+            <div>
+              <h3 class="news-item__title">1st EP「Angel.exe」配信開始</h3>
+              <p class="text-ja">全5曲をSpotify・Apple Music・各種ストリーミングサービスで配信開始。ジャケットビジュアルとともに、NEON MIRAの世界が公開された。</p>
+            </div>
+          </article>
+          <article class="glass-card news-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <time class="news-item__date" datetime="2026-02-28">2026.02.28</time>
+            <div>
+              <h3 class="news-item__title">リード曲「Angel.exe」先行公開</h3>
+              <p class="text-ja">EPリリースに先立ち、タイトル曲をYouTubeとSpotifyで先行公開。クロームの夜景とデジタルな孤独をテーマにしたMVティザーも同時公開。</p>
+            </div>
+          </article>
+          <article class="glass-card news-item reveal">
+            <span class="hover-border" aria-hidden="true"></span>
+            <time class="news-item__date" datetime="2026-01-10">2026.01.10</time>
+            <div>
+              <h3 class="news-item__title">CHROME SIGNAL RECORDS よりデビュー決定</h3>
+              <p class="text-ja">サイバーシティポップを標榜するNEON MIRAが、近未来レーベル CHROME SIGNAL RECORDS と契約。2026年春のEPリリースを発表。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section">
+      <div class="container">
+        <div class="about-preview reveal">
+          <div class="about-preview__layout">
+            <div class="about-preview__intro">
+              <h2 class="heading-display heading-md block-title">ABOUT</h2>
+              <span class="label label--ja">NEON MIRA について</span>
+              <div class="divider"></div>
+            </div>
+            <div class="profile-visual about-preview__visual glow-image">
+              <img src="images/artist-neon-mira.jpg" alt="NEON MIRA アーティストビジュアル" width="600" height="800" loading="lazy" decoding="async">
+              <p class="profile-visual__label">NEON <span>MIRA</span> / サイバーシティポップ</p>
+            </div>
+            <div class="about-preview__body">
+              <div class="prose prose--y2k">
+                <p>クロームの質感、夜の都市、Y2Kサイバーカルチャーから生まれた架空のソロアーティスト。シティポップの浮遊感とデジタルな冷たさを混ぜたサウンドで、現実と仮想の境界にある感情を描く。</p>
+                <p>レーベル CHROME SIGNAL RECORDS 所属。ビジュアルはシルバー・ブラック・ネオンピンクを基調とし、人物よりも「都市の中に存在する光」として表現される。音楽は80〜90年代のシティポップと、2000年代初頭のサイバー美学を現代的に再構成したサウンドが特徴。</p>
+              </div>
+              <div class="release-meta" style="margin: 1.25rem 0;">
+                <span class="meta-tag">サイバーシティポップ</span>
+                <span class="meta-tag">ソロ</span>
+                <span class="meta-tag meta-tag--pink">活動中</span>
+              </div>
+              <a href="profile.html" class="btn">プロフィールを見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Merch -->
+    <section class="section" id="merch">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k" style="text-align: center;">
+          <h2 class="heading-display heading-lg">MERCH</h2>
+          <span class="label label--ja">グッズ</span>
+        </div>
+
+        <div class="merch-grid">
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/angel-exe-limited-cd.jpg" alt="Angel.exe Limited CD" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 01</p>
+              <h3 class="merch-item__name">Angel.exe Limited CD</h3>
+              <p class="merch-item__price">¥3,300</p>
+              <p class="merch-item__desc">1st EP「Angel.exe」を収録した、クローム仕様の限定CDパッケージ。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/chrome-signal-tee.jpg" alt="Chrome Signal Tee" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 02</p>
+              <h3 class="merch-item__name">Chrome Signal Tee</h3>
+              <p class="merch-item__price">¥4,800</p>
+              <p class="merch-item__desc">NEON MIRAのロゴとシグナルグラフィックを落とし込んだ定番Tシャツ。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/angel-exe-baby-tee.jpg" alt="Angel.exe Baby Tee" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 03</p>
+              <h3 class="merch-item__name">Angel.exe Baby Tee</h3>
+              <p class="merch-item__price">¥4,500</p>
+              <p class="merch-item__desc">Y2Kムードを強めた、Angel.exeロゴ入りのコンパクトなベイビーT。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/signal-wave-long-sleeve.jpg" alt="Signal Wave Long Sleeve" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 04</p>
+              <h3 class="merch-item__name">Signal Wave Long Sleeve</h3>
+              <p class="merch-item__price">¥5,800</p>
+              <p class="merch-item__desc">袖の波形デザインと背面グラフィックが映えるロングスリーブT。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/chrome-dream-zip-hoodie.jpg" alt="Chrome Dream Zip Hoodie" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 05</p>
+              <h3 class="merch-item__name">Chrome Dream Zip Hoodie</h3>
+              <p class="merch-item__price">¥7,800</p>
+              <p class="merch-item__desc">背面のクロームロゴとCDリングが印象的な、NEON MIRA公式ジップフーディー。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/chrome-dream-muffler-towel.jpg" alt="Chrome Dream Muffler Towel" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 06</p>
+              <h3 class="merch-item__name">Chrome Dream Muffler Towel</h3>
+              <p class="merch-item__price">¥2,500</p>
+              <p class="merch-item__desc">ライブシーンにも映える、Chrome Dreamロゴ入りマフラータオル。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/signal-disc-keychain.jpg" alt="Signal Disc Keychain" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 07</p>
+              <h3 class="merch-item__name">Signal Disc Keychain</h3>
+              <p class="merch-item__price">¥1,300</p>
+              <p class="merch-item__desc">CDモチーフをアクリルチャーム化した、Angel.exe仕様のキーホルダー。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/neon-mira-logo-keychain.jpg" alt="NEON MIRA Logo Keychain" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 08</p>
+              <h3 class="merch-item__name">NEON MIRA Logo Keychain</h3>
+              <p class="merch-item__price">¥1,200</p>
+              <p class="merch-item__desc">クロームロゴをそのまま持ち歩ける、NEON MIRAロゴ型キーホルダー。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/cyber-sticker-pack.jpg" alt="Cyber Sticker Pack" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 09</p>
+              <h3 class="merch-item__name">Cyber Sticker Pack</h3>
+              <p class="merch-item__price">¥900</p>
+              <p class="merch-item__desc">ロゴ、波形、CD、UIモチーフを詰め込んだサイバーステッカーパック。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/angel-exe-poster.jpg" alt="Angel.exe Random Poster" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 10</p>
+              <h3 class="merch-item__name">Angel.exe Random Poster</h3>
+              <p class="merch-item__price">¥900</p>
+              <p class="merch-item__desc">Angel.exeのビジュアルポスター全5種から、ランダムで1枚封入。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/neon-mira-trading-card-set.jpg" alt="NEON MIRA Trading Card Set" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 11</p>
+              <h3 class="merch-item__name">NEON MIRA Trading Card Set</h3>
+              <p class="merch-item__price">¥2,200</p>
+              <p class="merch-item__desc">全11種のビジュアルカードを収録した、コレクション向けトレカセット。</p>
+            </div>
+          </article>
+
+          <article class="glass-card merch-item merch-item--clickable reveal" tabindex="0" role="button">
+            <span class="hover-border" aria-hidden="true"></span>
+            <div class="merch-item__visual">
+              <img src="images/chrome-signal-badge-pack.jpg" alt="Chrome Signal Badge Pack" width="600" height="600" loading="lazy" decoding="async">
+            </div>
+            <div class="merch-item__body">
+              <p class="merch-item__num">// 12</p>
+              <h3 class="merch-item__name">Chrome Signal Badge Pack</h3>
+              <p class="merch-item__price">¥1,500</p>
+              <p class="merch-item__desc">ロゴやシグナルモチーフを集めた、5個入り缶バッジパック。</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="merch-all-cta reveal">
+          <a href="merch.html" class="merch-all-btn">
+            <span class="merch-all-btn__inner">
+              <span class="merch-all-btn__tag">// MERCH.CATALOG</span>
+              <span class="merch-all-btn__label">
+                <span class="merch-all-btn__en">VIEW ALL ITEMS</span>
+                <span class="merch-all-btn__ja">すべてのグッズを見る</span>
+              </span>
+            </span>
+            <span class="merch-all-btn__arrow" aria-hidden="true">››</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SNS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal section-header--y2k" style="text-align: center;">
+          <h2 class="heading-display heading-md">FOLLOW</h2>
+          <span class="label label--ja">フォローする</span>
+        </div>
+
+        <div class="sns-grid reveal">
+          <a href="#" class="sns-link">Instagram</a>
+          <a href="#" class="sns-link">TikTok</a>
+          <a href="#" class="sns-link">YouTube</a>
+          <a href="#" class="sns-link">Spotify</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="streaming-bar" aria-label="ストリーミングサービス">
+    <div class="container streaming-bar__inner">
+      <span class="streaming-bar__label">// STREAM</span>
+      <nav class="streaming-bar__nav">
+        <a href="#">Spotify</a>
+        <a href="#">Apple Music</a>
+        <a href="#">YouTube Music</a>
+        <a href="#">Amazon Music</a>
+      </nav>
+    </div>
+  </aside>
+
+  <a href="music.html" class="sticky-cta">
+    <span class="sticky-cta__dot" aria-hidden="true"></span>
+    Listen — Angel.exe
+  </a>
+
+  <nav class="bottom-nav" aria-label="モバイル下部ナビゲーション">
+    <a href="index.html">Home</a>
+    <a href="music.html">Music</a>
+    <a href="merch.html">Merch</a>
+    <a href="profile.html">Profile</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 NEON MIRA / CHROME SIGNAL RECORDS</p>
+    </div>
+  </footer>
+
+  <div class="merch-modal" id="merch-modal" aria-hidden="true" role="dialog" aria-labelledby="merch-modal-title">
+    <div class="merch-modal__backdrop"></div>
+    <div class="merch-modal__panel">
+      <div class="merch-modal__bar">
+        <span class="merch-modal__tag">// MERCH.PREVIEW</span>
+        <button type="button" class="merch-modal__close" aria-label="閉じる">×</button>
+      </div>
+      <div class="merch-modal__content">
+        <div class="merch-modal__visual">
+          <img src="" alt="" id="merch-modal-img" width="600" height="600">
+        </div>
+        <div class="merch-modal__info">
+          <p class="merch-modal__num" id="merch-modal-num"></p>
+          <h3 class="merch-modal__title" id="merch-modal-title"></h3>
+          <p class="merch-modal__price" id="merch-modal-price"></p>
+          <p class="merch-modal__desc" id="merch-modal-desc"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
