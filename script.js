@@ -304,7 +304,7 @@
     var currentPage = window.location.pathname.split('/').pop() || 'index.html';
     if (currentPage === '') currentPage = 'index.html';
 
-    var navLinks = document.querySelectorAll('.header-nav a, .mobile-menu__nav a, .bottom-nav a');
+    var navLinks = document.querySelectorAll('.header-nav a, .mobile-menu__nav a');
     navLinks.forEach(function (link) {
       var href = link.getAttribute('href');
       if (href === currentPage || (currentPage === 'index.html' && href === 'index.html')) {
@@ -625,11 +625,22 @@
     });
   }
 
-  function showMerchToast(message) {
+  function showMerchToast() {
     var toast = document.getElementById('merch-toast');
     if (!toast) return;
 
-    toast.textContent = message;
+    toast.innerHTML =
+      '<span class="merch-toast__icon" aria-hidden="true">' +
+      '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M20 6L9 17l-5-5"></path>' +
+      '</svg>' +
+      '</span>' +
+      '<span class="merch-toast__body">' +
+      '<strong class="merch-toast__title">ADDED TO CART</strong>' +
+      '<span class="merch-toast__ja">カートに入れました</span>' +
+      '<span class="merch-toast__note">※デモサイトのため、実際の購入・決済は行われません</span>' +
+      '</span>';
+
     toast.classList.add('is-visible');
     toast.setAttribute('aria-hidden', 'false');
 
@@ -637,7 +648,7 @@
     showMerchToast._timer = setTimeout(function () {
       toast.classList.remove('is-visible');
       toast.setAttribute('aria-hidden', 'true');
-    }, 2200);
+    }, 4500);
   }
 
   function initMerchPage() {
@@ -664,7 +675,7 @@
       return (
         '<div class="merch-card-actions">' +
         '<button type="button" class="btn btn-primary merch-view-btn">VIEW ITEM</button>' +
-        '<button type="button" class="btn merch-cart-btn" aria-label="Add to cart">' +
+        '<button type="button" class="btn merch-cart-btn" aria-label="カートに入れる">' +
         '<svg class="merch-cart-btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
         '<path d="M6 6h15l-1.5 9h-12L6 6z"></path>' +
         '<circle cx="9" cy="20" r="1"></circle>' +
@@ -689,7 +700,7 @@
 
       root.querySelectorAll('.merch-cart-btn').forEach(function (btn) {
         btn.addEventListener('click', function () {
-          showMerchToast('Added to signal cart.');
+          showMerchToast();
         });
       });
     }
